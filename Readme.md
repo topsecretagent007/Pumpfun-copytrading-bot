@@ -1,4 +1,4 @@
-# Solana Ultra-Fast Copytrading Bot in Rust ⚡🦀
+# ⚡ Solana Ultra-Fast Copytrading Bot in Rust ⚡
 
 ## Overview
 Tired of missing profitable trades? Meet the **Solana Ultra-Fast Copytrading Bot**, built in **Rust** for blazing speed and rock-solid performance. Designed to execute trades in the **same block**, this bot ensures you stay ahead of the game. Get ready to **copy trades at lightning speed!**
@@ -69,27 +69,24 @@ TOKEN_PERCENTAGE=1  # Percentage
 ### 2️⃣ Add Target Wallets
 - List target wallet addresses in `targetlist.txt`.
 
-### 3️⃣ Run the Bot
-- Execute `raypump-copytrading-bot.exe`
-
 ## 🏆 Trade Execution Example
 ```
 ---[BUY]---
-Target: https://solscan.io/tx/BUY_TX_HASH
-Copied: https://solscan.io/tx/COPIED_BUY_TX_HASH
+Target: https://solscan.io/tx/5aaQDtXjyf4NDF3NKjjmC5s6Y8AhW3ieTpmB6Kxt6UGC2AowJ2xRTzFJo7KM4CVcpbphA2w76juGDdvqqgNTt1CF
+Copied: https://solscan.io/tx/4uPU2BRi7BJCTxp4kJQFTmLj5pmoAyKw7zCHNCPiP2NYK2HcqXfJr8gE6eF89VYPEy5VTFaRQf4DTUZNzttFQ73Z
 
 ---[SELL]---
-Target: https://solscan.io/tx/SELL_TX_HASH
-Copied: https://solscan.io/tx/COPIED_SELL_TX_HASH
+Target: https://solscan.io/tx/22qnz4aBXqmeQbp6cnAogSVPNxSbEJr7tswch5QXLSG8Rvnb4SwDJFJ9RytpUVkUUQUtiy44fYwafF5CgiYjdVtp
+Copied: https://solscan.io/tx/3uBU12fQT14z88tiX1i1EH8XWXpFco4dU1QG8VEtYQyXtaSQXQB6AR7HBF4GtF9YDCa54Uw4xE7H7JPjBM9cETKM
 ```
 ### ✅ Test Result: Same Block Execution
-- **Target:** [View Transaction](https://solscan.io/tx/TARGET_TX_HASH)
-- **Copied:** [View Transaction](https://solscan.io/tx/COPIED_TX_HASH)
-- **DEX Screener:** [View Market Data](https://dexscreener.com/solana/MARKET_PAIR)
-- **Wallet Address:** [View Wallet](https://gmgn.ai/sol/address/WALLET_ADDRESS)
+- **Target:** [View Transaction](https://solscan.io/tx/4amQhsMLqv2Lbr6UyFcoTdctsD76dKAvAHFkvCDpqa6kUqeHXN7drKXpFJrqDV389Uu4rEY575WHJYdg4inSMtFf)
+- **Copied:** [View Transaction](https://solscan.io/tx/57P2bZGJ5QTThjT4jv88CXEU4oGDTgVaS2c386qBMEs2KkizN2PV7cKKZgS8uvWwPQyTpBUXTTfnjJ4dECuJf39t)
+- **DEX Screener:** [View Market Data](https://dexscreener.com/solana/JD3VPqQ7pfHZ4h2zhALfvz5E7dantyVpsDUov1Lgpump)
+- **Wallet Address:** [View Wallet](https://gmgn.ai/sol/address/D3QXckXy26G6rTnqHQFUxvwpRsv18o5wBrHMVoodYWTa)
 
 ## 💰 Donate & Support
-**SOL Address:** `6vT7nrqtbXDWVc8cRUtifxgfDZi19aW7qhcZg2hSepwb`
+**SOL Address:** `5HFvAqZdv18dHsVL3j39JGbacVsgHHB5GVzcGPvfSqG1`
 
 ## 🛠 Need Help?
 📩 **Telegram:** [@topsecretaegnt_007](https://t.me/topsecretaegnt_007)
