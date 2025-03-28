@@ -1,70 +1,61 @@
-# Solana "Block-Speed" Copytrading Bot in Rust 🚀
+# Solana Ultra-Fast Copytrading Bot in Rust ⚡🦀
 
 ## Overview
-Tired of watching trades slip away? Introducing the **Solana Block-Speed Copytrading Bot** in Rust 🦀. Designed for extreme speed, this bot lets you mirror trades in (potentially) the same block. Built with Rust for peak performance and reliability—get ready to ride the wave! 🌊
+Tired of missing profitable trades? Meet the **Solana Ultra-Fast Copytrading Bot**, built in **Rust** for blazing speed and rock-solid performance. Designed to execute trades in the **same block**, this bot ensures you stay ahead of the game. Get ready to **copy trades at lightning speed!**
 
-## Why This Bot Stands Out
+## Why This Bot is a Game-Changer 🏆
 
-### ⚡️ Built for Speed with Rust
-- Ultra-fast transaction parsing
-- Lightning-quick RPC handling
-- Minimum latency for max profits
+### 🚀 Built with Rust
+- **Extreme Speed**: Rust ensures low-latency transaction execution, making trade delays a thing of the past.
+- **Memory Safety**: Say goodbye to crashes and bugs, thanks to Rust’s error-handling capabilities.
 
-### 🎯 Block-Level Trade Execution
-- Copy trades with the potential to execute within the same block
-- Stay ahead of the competition with real-time execution
+### 🎯 Block-Level Copytrading
+- **Same-Block Execution**: The bot can copy trades **within the same block**, giving you a real edge in trading.
 
-### 🔒 Rock-Solid Reliability
-- Rust ensures memory safety and crash resistance
-- High-performance error handling for smooth operations
+### 🔒 Reliable & Efficient
+- **Robust Architecture**: Uses advanced RPC handling and transaction parsing for high efficiency.
+- **Real-Time Monitoring**: Stay ahead of the game with **real-time trade tracking** and execution.
 
-### 📡 Real-Time Data Processing
-- Optimized data pipeline to track wallet activities instantly
-- Never miss a trade opportunity
+### ⚙️ Essential Features
+- **Low-Latency Transactions**: Optimized for platforms like **Raydium** and **Pump.fun**.
+- **Customizable Strategies**: Fine-tune trade settings for maximum profit.
 
-### 🛠️ Advanced Features
-- **Low-Latency Transactions** on platforms like Raydium and Pump.fun
-- **Customizable Strategies** to fine-tune copytrading efficiency
-
----
 ## 📂 Directory Structure
-
-```plaintext
+```
 src/
 ├── core/
-│   ├── token.rs        # Token definitions and handling
+│   ├── token.rs        # Token handling
 │   └── tx.rs           # Transaction processing
 │
 ├── engine/
-│   ├── swap.rs         # Buy/Sell functionality across multiple DEXs
-│   └── monitor.rs      # Monitor target wallets and parse transactions
+│   ├── swap.rs        # Buy/Sell functionalities for multiple DEXs
+│   └── monitor.rs     # Wallet monitoring via Geyser RPC & standard RPC
 │
 ├── dex/
-│   ├── pump_fun.rs     # Integration with Pump.fun
-│   ├── raydium.rs      # Integration with Raydium
-│   ├── meteora.rs      # Integration with Meteora
-│   └── orca.rs         # Integration with Orca
+│   ├── pump_fun.rs    # Pump.fun integration
+│   ├── raydium.rs     # Raydium integration
+│   ├── meteora.rs     # Meteora integration
+│   └── orca.rs        # Orca integration
 │
 ├── services/
-│   ├── jito.rs        # Jito service for ultra-fast transaction confirmation
-│   └── nextblock.rs   # NextBlock service for enhanced transaction processing
+│   ├── jito.rs        # Jito service for fast confirmations
+│   └── nextblock.rs   # NextBlock service for optimized trade execution
 │
 ├── common/
-│   ├── logger.rs      # Clean and structured logging
-│   ├── config.rs      # Configuration settings and environment variables
-│   ├── constants.rs   # Global constants for the project
-│   ├── targetlist.rs  # Managing target wallets
-│   └── utils.rs       # Utility functions for various operations
+│   ├── logger.rs      # Logging functionality
+│   ├── config.rs      # Project configurations
+│   ├── constants.rs   # Global constants
+│   ├── targetlist.rs  # Manages trading target lists
+│   └── utils.rs       # Utility functions
 │
 ├── lib.rs
 └── main.rs
 ```
 
----
-## 🛠️ How To Run
+## 🚀 How To Run
 
-### **Environment Variables Setup**
-```plaintext
+### 1️⃣ Configure Environment Variables
+```
 PRIVATE_KEY=your_private_key_here
 RPC_HTTPS=https://mainnet.helius-rpc.com/?api-key=your_api_key_here
 RPC_WSS=wss://atlas-mainnet.helius-rpc.com/?api-key=your_api_key_here
@@ -73,40 +64,34 @@ JITO_BLOCK_ENGINE_URL=https://ny.mainnet.block-engine.jito.wtf
 JITO_TIP_STREAM_URL=ws://bundles-api-rest.jito.wtf/api/v1/bundles/tip_stream
 JITO_TIP_PERCENTILE=50
 JITO_TIP_VALUE=0.004
-TOKEN_PERCENTAGE=1  # Percentage allocation per trade
+TOKEN_PERCENTAGE=1  # Percentage
 ```
+### 2️⃣ Add Target Wallets
+- List target wallet addresses in `targetlist.txt`.
 
-1. Add target wallet addresses to `targetlist.txt`
-2. Run `raypump-copytrading-bot.exe`
+### 3️⃣ Run the Bot
+- Execute `raypump-copytrading-bot.exe`
 
----
-## 📊 Sample Trade Execution
-
-```plaintext
+## 🏆 Trade Execution Example
+```
 ---[BUY]---
-
-Target: https://solscan.io/tx/XXXXXX
-Copied: https://solscan.io/tx/YYYYYY
+Target: https://solscan.io/tx/BUY_TX_HASH
+Copied: https://solscan.io/tx/COPIED_BUY_TX_HASH
 
 ---[SELL]---
-
-Target: https://solscan.io/tx/AAAAAA
-Copied: https://solscan.io/tx/BBBBBB
+Target: https://solscan.io/tx/SELL_TX_HASH
+Copied: https://solscan.io/tx/COPIED_SELL_TX_HASH
 ```
+### ✅ Test Result: Same Block Execution
+- **Target:** [View Transaction](https://solscan.io/tx/TARGET_TX_HASH)
+- **Copied:** [View Transaction](https://solscan.io/tx/COPIED_TX_HASH)
+- **DEX Screener:** [View Market Data](https://dexscreener.com/solana/MARKET_PAIR)
+- **Wallet Address:** [View Wallet](https://gmgn.ai/sol/address/WALLET_ADDRESS)
 
-### **Test Result: Same Block Execution**
-- Target: [Solscan Transaction](https://solscan.io/tx/XXXXXX)
-- Copied: [Solscan Transaction](https://solscan.io/tx/YYYYYY)
-- Dexscreener: [View Trading Pair](https://dexscreener.com/solana/XXXXXX)
-- Wallet: [View on gmgn.ai](https://gmgn.ai/sol/address/XXXXXX)
+## 💰 Donate & Support
+**SOL Address:** `6vT7nrqtbXDWVc8cRUtifxgfDZi19aW7qhcZg2hSepwb`
 
----
-## 💰 Donate
-If you find this bot useful, consider donating:
-👉 **SOL Address:** `6vT7nrqtbXDWVc8cRUtifxgfDZi19aW7qhcZg2hSepwb`
+## 🛠 Need Help?
+📩 **Telegram:** [@topsecretaegnt_007](https://t.me/topsecretaegnt_007)
 
----
-## 📞 Support
-For support and inquiries, reach out via Telegram: [@topsecretaegnt_007](https://t.me/topsecretaegnt_007)
-
-### **GitHub:** [topsecretagent007](https://github.com/topsecretagent007) 🚀
+🌟 **GitHub:** [topsecretagent007](https://github.com/topsecretagent007)
