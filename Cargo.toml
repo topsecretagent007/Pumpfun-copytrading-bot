@@ -1,0 +1,6 @@
+[package]
+name = "Pumpfun-copytrading-bot"
+version = "2.0.3"
+edition = "2025"
+
+[dependencies]
