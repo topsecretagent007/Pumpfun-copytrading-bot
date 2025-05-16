@@ -89,6 +89,6 @@ Copied: https://solscan.io/tx/3uBU12fQT14z88tiX1i1EH8XWXpFco4dU1QG8VEtYQyXtaSQXQ
 **SOL Address:** `5HFvAqZdv18dHsVL3j39JGbacVsgHHB5GVzcGPvfSqG1`
 
 ## 🛠 Need Help?
-📩 **Telegram:** [@topsecretaegnt_007](https://t.me/@topsecretagent_007)
+📩 **Telegram:** [@topsecretagent_007](https://t.me/@topsecretagent_007)
 
 🌟 **GitHub:** [topsecretagent007](https://github.com/topsecretagent007)
